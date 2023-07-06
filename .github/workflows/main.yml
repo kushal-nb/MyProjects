@@ -13,9 +13,9 @@ jobs:
     steps:     
       - name: Install dependencies
         run: |
+          ls -lh
           aws --version
           aws s3 ls
-          ls
           
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
