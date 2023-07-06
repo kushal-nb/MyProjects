@@ -10,11 +10,6 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env: 
-      RELEASE_NAME: kushal
-    defaults: 
-      run:
-        working-directory: build/docker
     steps:     
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
