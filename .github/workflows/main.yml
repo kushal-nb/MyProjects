@@ -14,5 +14,10 @@ jobs:
       - name: Install dependencies
         run: |
           aws --version
-          
+          aws s3 ls
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SEC_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-1'
+          AWS_SESSION_TOKEN: ${{ secrets.SESS_TOKEN }}
           
