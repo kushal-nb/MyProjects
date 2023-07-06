@@ -16,7 +16,8 @@ jobs:
           ls -lh
           aws --version
           aws s3 ls
-          
+          pwd
+#          /usr/bin/bash
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SEC_KEY }}
