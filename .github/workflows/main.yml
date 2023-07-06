@@ -26,6 +26,8 @@ jobs:
           workdir: ""    # defaults to "PWD/unfor19-awscli"
       
       - name : check version
+        shell: bash
         run: |
           aws --version
+          
           
